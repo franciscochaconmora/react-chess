@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { render } from 'react-dom';
 import './style.css';
 
+import peon from './images/peon-negro.png'
+
 
 /* Chess Game*/
 class App extends Component {
@@ -74,7 +76,7 @@ class Square extends React.Component {
   render() {
     return (
       <button className="square" style={{"background-color" : this.props.color}}>
-        {this.props.row}-{this.props.column}
+        <img src={peon} />
       </button>
     );
   }
